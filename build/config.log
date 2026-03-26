@@ -1,0 +1,11 @@
+# project  configured on Thu Mar 26 19:28:23 2026 by
+# waf 2.0.19 (abi 20, python 30c03f0 on linux)
+# using ./waf configure --rtems-bsp=arm/xilinx_zynq_a9_qemu
+#
+----------------------------------------
+Setting top to
+/home/klayvision/rtems_nginx
+----------------------------------------
+Setting out to
+/home/klayvision/rtems_nginx/build
+from /home/klayvision/rtems_nginx: RTEMS path is not valid. No lib/pkgconfig or rtems-config found.

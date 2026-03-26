@@ -1,0 +1,9 @@
+ARCHS = ['arm-rtems7']
+ARCH_BSPS = ['arm-rtems7-xilinx_zynq_a9_qemu']
+BINDIR = '/usr/local/bin'
+LIBDIR = '/usr/local/lib64'
+LONG_COMMANDS = 'no'
+PREFIX = '/usr/local'
+RTEMS_ARCH_BSP_LIST = ['arm-rtems7-xilinx_zynq_a9_qemu']
+RTEMS_TOOLS = ['/home/klayvision/sandbox/bin']
+SHOW_COMMANDS = 'no'
