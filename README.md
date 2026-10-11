@@ -1,8 +1,18 @@
-# RTEMS Nginx
+# RTEMS Port of tiny-nginx
 
-A lightweight event-driven HTTP server for RTEMS 7 and ARM-based embedded systems.
+This repository is an RTEMS port based on [tiny-nginx](https://github.com/gd-arnold/tiny-nginx), a lightweight event-driven HTTP server.
+
+It adapts the original project for RTEMS 7 and ARM-based embedded systems while preserving its focus on serving static files with a small HTTP implementation.
 
 The project serves static files over HTTP using non-blocking sockets, a `poll()`-based event loop, and RTEMS worker tasks.
+
+## Port Scope
+
+The RTEMS port replaces Linux-specific event handling with a `poll()`-based event abstraction and uses RTEMS tasks for the master and worker architecture. Networking is provided by RTEMS BSD, and the included build and QEMU configuration targets RTEMS 7.
+
+The upstream project is available at:
+
+<https://github.com/gd-arnold/tiny-nginx>
 
 ## Features
 
