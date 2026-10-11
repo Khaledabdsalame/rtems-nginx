@@ -196,8 +196,11 @@ qemu-system-arm \
 Configure the host TAP interface before starting QEMU:
 
 ```bash
-sudo ip addr add 169.254.1.1/16 dev qtap
+sudo ip tuntap add qtap mode tap user $(whoami)
+
 sudo ip link set qtap up
+
+sudo ip addr add 169.254.1.1/16 dev qtap
 ```
 
 The server should then be available at:
